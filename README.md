@@ -25,14 +25,16 @@ Secondly you need to create a few Helpers in HA to act as triggers for this UI t
 This controls the side menu from being shown or hidden. 
 2. Create a second input_boolean or Toggle, mine is called "input_boolean.rx_stereo_volume". You can use this name if you like, or name it whatever you want and then search for and edit the above code to replace "input_boolean.rx_stereo_volume" with whatever your boolean was named. This controls the touch volume slider from being shown or hidden. 
 3. Create a input_select or Dropdown, mine is called "input_select.rx_stereo_menu_list". You can use this name if you like, or name it whatever you want and then search for and edit the above code to replace "input_select.rx_stereo_menu_list" with whatever your boolean was named. This controls which iframe window to show from the side menu. You need to add the following entries for the input_select, I cant remember if the order matters, so just in case I would add them in the order below. 
-
--   Search
--   Playlists
--   Albums
--   Artists
--   Tracks
--   Stations
--   Coverart
+  -   Search
+  -   Playlists
+  -   Albums
+  -   Artists
+  -   Tracks
+  -   Stations
+  -   Coverart
+4. This UI was built to work with a single player in my house. I wanted to get around to making this player a variable selection, but did not have the time to do so.
+As it stands you would need to create a new dashboard or dashboard view for each player you want and interface for. 
+Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use. 
 
 You also need a few images and the theme file. 
 The images, attached here need to go in the root of your "www" folder in your config folder. If you put them into a sub-folder under www make sure you edit the code above accordingly. In the code above the path is listed as "/local/mass-power.png" and "/local/mass-background2.png", and there are two entries for each. You would need to edit these paths to "/local/sub-folder-name/mass-background2.png" and "/local/sub-folder-name/mass-power.png" accordingly for each if you put them in a subfolder. 
@@ -47,5 +49,16 @@ _Lovelace Mushroom Cards_  https://github.com/piitaya/lovelace-mushroom
 _My-Slider-v2_  https://github.com/AnthonMS/my-cards/blob/main/docs/cards/slider-v2.md
 _Lovelace-State-Switch_  https://github.com/thomasloven/lovelace-state-switch
 _Lovelace-Layout-Card_  https://github.com/thomasloven/lovelace-layout-card
+_Kiosk-Mode_  https://github.com/NemesisRE/kiosk-mode
+
+**Note for Kiosk Mode - You can remove the section of the code before "views:" if you do not want to use Kiosk Mode. I know people use different methods for hiding the Side Menu and Top Bar. I prefer hiding the side menu via Home Assistant settings, and then using the Kiosk Mode addon to hide the top bar. 
+The reason I like this is because I can create a helper input_boolean or toggle to show/hide the top bar. I then add a double tap function to one of the UI elements in the layout to toggle this helper. This way all I need to do when I want to edit a layout is double tap that element, and I can edit, then once I'm done with the edit, I double tape the element again and Im back to a nice clean interface with no top bar. If you want to give this method a try, just create a toggle helper called inbut_boolean.hide_header, and then add the following to one of the buttons on the screen. I did not add this to any of the elements in this UI yet, as I have this UI as a secondary view under my main layout. I control the header from one of the other views. If you want to add it, just choose which page element you want to act as your double tap and add the following: 
+```
+double_tap_action:
+  action: call-service
+  service: input_boolean.toggle
+  target:
+    entity_id: input_boolean.mbr_hide_header
+```
 
 I think that's it, but I might have missed something. I still have notifications set for the thread at Music Assistant this started under, so just let me know if you have questions. I will try to help, but I am still a bit overwhelmed with work. 
