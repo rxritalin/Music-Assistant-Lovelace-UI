@@ -14,6 +14,7 @@ Remember this layout is for an oddball touchscreen I have on my stereo, with a r
 This is pulled straight from my Raw Configuration Editor, so you should be able to create a new dashboard, and then just paste this into the Raw Config Editor on your end.  There are a few other bits you will need, and obviously some things you need to change to fit your setup. 
 
 For strarters, you need to edit the local address IP of your Music Assistant. In the Music-Assistant-Lovelace-UI.yaml file do a search for "192.168.86.6:8095" and edit it accordly. 
+
 Also make sure that Music Assistant webserver is enabled, or you will not be able to view any of its pages in the iFrames. 
 To do this open up Music Assistant and go to settings. Choose the icon for Core in the top right and then choose Web Server(frontend and API) from the list. 
 Make sure Expose the webserver (port 8095) is checked ON. 
