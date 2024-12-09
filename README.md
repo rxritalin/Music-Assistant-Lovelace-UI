@@ -1,6 +1,12 @@
 # Music-Assistant-Lovelace-UI
-A work in progress Lovelace UI for Music Assistant in Home Assistant
+A work in progress Lovelace UI for Music Assistant in Home Assistant. 
 
+
+https://github.com/user-attachments/assets/0358ee10-6fdf-40ce-b838-19a5c3837f03
+
+
+I created this github as a storage location for the discussion on this custom UI started over at https://github.com/orgs/music-assistant/discussions/2601
+Please feel free to comment in that thread if you want to join the discussion. 
 
 I wish I could have spend more time to fix a few things and make this an easier design to edit, but unfortunately I have not had the time to do this at the moment. With that said, I am going to release the code for it as is for you to pick through and see if you can find anything useful. Ill make updates to this when/if I have time. 
 Remember this layout is for an oddball touchscreen I have on my stereo, with a resolution of 1920x720. This will obviously need to be addressed for different screens. 
@@ -29,4 +35,13 @@ The images, attached here need to go in the root of your "www" folder in your co
 The theme is just an edit of a Mushroom theme. 
 DO NOT PUT THIS THEME FILE IN THE MAIN MUSHROOM THEME FOLDER!!!! When Mushroom updates, it can delete custom themes in the /config/themes/mushroom folder. So create a secondary folder in /config/themes called "Custom Mushroom" and put the theme file in there. 
 
-I think that's it, but I might have missed something. I still have notifications set for this thread, so just let me know if you have questions. I will try to help, but I am still a bit overwhelmed with work. 
+Lastly, there are some custom Lovelace cards you are going to need to make this work. 
+All of these should be available in HACS, and I suggest using that method to install them. 
+_Mini-Media-Player_  https://github.com/kalkih/mini-media-player
+_Lovelace-hui-element_  https://github.com/thomasloven/lovelace-hui-element
+_Lovelace Mushroom Cards_  https://github.com/piitaya/lovelace-mushroom
+_My-Slider-v2_  https://github.com/AnthonMS/my-cards/blob/main/docs/cards/slider-v2.md
+_Lovelace-State-Switch_  https://github.com/thomasloven/lovelace-state-switch
+_Lovelace-Layout-Card_  https://github.com/thomasloven/lovelace-layout-card
+
+I think that's it, but I might have missed something. I still have notifications set for the thread at Music Assistant this started under, so just let me know if you have questions. I will try to help, but I am still a bit overwhelmed with work. 
