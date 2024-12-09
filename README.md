@@ -43,13 +43,13 @@ DO NOT PUT THIS THEME FILE IN THE MAIN MUSHROOM THEME FOLDER!!!! When Mushroom u
 
 Lastly, there are some custom Lovelace cards you are going to need to make this work. 
 All of these should be available in HACS, and I suggest using that method to install them. 
-_Mini-Media-Player_  https://github.com/kalkih/mini-media-player
-_Lovelace-hui-element_  https://github.com/thomasloven/lovelace-hui-element
-_Lovelace Mushroom Cards_  https://github.com/piitaya/lovelace-mushroom
-_My-Slider-v2_  https://github.com/AnthonMS/my-cards/blob/main/docs/cards/slider-v2.md
-_Lovelace-State-Switch_  https://github.com/thomasloven/lovelace-state-switch
-_Lovelace-Layout-Card_  https://github.com/thomasloven/lovelace-layout-card
-_Kiosk-Mode_  https://github.com/NemesisRE/kiosk-mode
+- _Mini-Media-Player_  https://github.com/kalkih/mini-media-player
+- _Lovelace-hui-element_  https://github.com/thomasloven/lovelace-hui-element
+- _Lovelace Mushroom Cards_  https://github.com/piitaya/lovelace-mushroom
+- _My-Slider-v2_  https://github.com/AnthonMS/my-cards/blob/main/docs/cards/slider-v2.md
+- _Lovelace-State-Switch_  https://github.com/thomasloven/lovelace-state-switch
+- _Lovelace-Layout-Card_  https://github.com/thomasloven/lovelace-layout-card
+- _Kiosk-Mode_  https://github.com/NemesisRE/kiosk-mode
 
 **Note for Kiosk Mode - You can remove the section of the code before "views:" if you do not want to use Kiosk Mode. I know people use different methods for hiding the Side Menu and Top Bar. I prefer hiding the side menu via Home Assistant settings, and then using the Kiosk Mode addon to hide the top bar. 
 The reason I like this is because I can create a helper input_boolean or toggle to show/hide the top bar. I then add a double tap function to one of the UI elements in the layout to toggle this helper. This way all I need to do when I want to edit a layout is double tap that element, and I can edit, then once I'm done with the edit, I double tape the element again and Im back to a nice clean interface with no top bar. If you want to give this method a try, just create a toggle helper called inbut_boolean.hide_header, and then add the following to one of the buttons on the screen. I did not add this to any of the elements in this UI yet, as I have this UI as a secondary view under my main layout. I control the header from one of the other views. If you want to add it, just choose which page element you want to act as your double tap and add the following: 
