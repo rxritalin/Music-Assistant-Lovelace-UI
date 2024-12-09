@@ -1,0 +1,19 @@
+
+# https://www.home-assistant.io/integrations/frontend/#defining-themes
+Mushroom Music:
+    # Home Assistant override
+    ha-card-border-radius: 0px
+    ha-card-box-shadow: none
+    # Layout
+    mush-spacing: 8px
+    # Elements
+    mush-icon-border-radius: 0px
+    mush-control-border-radius: 0px
+    # Chips
+    mush-chip-border-radius: 0px
+    # Mini-Media-Player
+    mini-media-player-base-color: '#ffffffba'
+    mini-media-player-overlay-color-stop: 0%
+    modes:
+        light: {}
+        dark: {}
