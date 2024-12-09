@@ -33,7 +33,7 @@ This controls the side menu from being shown or hidden.
   -   Stations
   -   Coverart
 4. This UI was built to work with a single player in my house. I wanted to get around to making this player a variable selection, but did not have the time to do so.
-As it stands you would need to create a new dashboard or dashboard view for each player you want and interface for. 
+As it stands you would need to create a new dashboard or dashboard view for each player you want an interface for. 
 Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use. 
 
 You also need a few images and the theme file. 
