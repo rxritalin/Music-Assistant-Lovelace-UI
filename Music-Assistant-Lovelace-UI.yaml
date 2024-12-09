@@ -1,0 +1,2669 @@
+kiosk_mode:
+  entity_settings:
+    - entity:
+        input_boolean.mbr_hide_header: 'on'
+      hide_header: true
+views:
+  - title: LR Stereo
+    path: lr-stereo
+    theme: Mushroom Music
+    cards:
+      - type: picture-elements
+        elements:
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: full-cover-fit
+            scale: '1'
+            tap_action: false
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              top: '-150px'
+              left: 873px
+              height: 695px
+              width: 1786px
+            card_mod:
+              style:
+                ha-card: |
+                  div.mmp__bg {
+                    filter: blur(10px) grayscale(50%) brightness(0.6);
+                  }    
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '2'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: true
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: false
+              runtime: false
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: 122px
+              height: 40px
+              '--mmp-text-color': '#ffffffba'
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                  width: 982px;
+                {% else %}
+                  left: 1310px;
+                  width: 793px;
+                {% endif %}
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '3'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: false
+              next: false
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: '-76px'
+              height: 152px
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                  width: 490px;
+                {% else %}
+                  left: 1310px;
+                  width: 390px;
+                {% endif %}
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '5'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: false
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: '-124px'
+              height: 200px
+              width: 200px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                {% else %}
+                  left: 1310px;
+                {% endif %}
+                }
+                .entity__icon {
+                  --mdc-icon-size: 80px !important;
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '1.6'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: false
+              state_lable: true
+            style:
+              bottom: 36px
+              height: 40px
+              width: 40px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                    left: 911px;
+                  {% else %}
+                    left: 1111px;
+                  {% endif %}
+                  }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '1.6'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: false
+              repeat: true
+              state_lable: true
+            style:
+              bottom: 36px
+              left: 1510px
+              height: 40px
+              width: 40px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:hui-element
+            card_type: vertical-stack
+            cards:
+              - type: custom:mushroom-entity-card
+                entity: input_boolean.rx_stereo_menu
+                icon: mdi:menu
+                primary_info: none
+                secondary_info: none
+                icon_type: icon
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    :host {
+                    {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                      --mush-icon-symbol-size: 0.0em;
+                    {% else %}
+                      --mush-icon-symbol-size: 1.0em;
+                    {% endif %}
+                    }
+                    ha-card {
+                      --chip-background: none !important;
+                      width: fit-content;
+                      background: none;
+                      padding: 15px 0px 0px 15px !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    mushroom-badge-icon {
+                      --main-color: none !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                    }
+              - type: conditional
+                conditions:
+                  - condition: state
+                    entity: input_boolean.rx_stereo_menu
+                    state: 'on'
+                card:
+                  type: vertical-stack
+                  cards:
+                    - type: custom:mushroom-template-card
+                      primary: Search
+                      secondary: ' '
+                      icon: mdi:magnify
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Search
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+                    - type: custom:mushroom-template-card
+                      primary: Playlists
+                      secondary: ' '
+                      icon: mdi:playlist-music-outline
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Playlists
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+                    - type: custom:mushroom-template-card
+                      primary: Albums
+                      secondary: ' '
+                      icon: mdi:album
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Albums
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+                    - type: custom:mushroom-template-card
+                      primary: Artists
+                      secondary: ' '
+                      icon: mdi:account-music
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Artists
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+                    - type: custom:mushroom-template-card
+                      primary: Tracks
+                      secondary: ' '
+                      icon: mdi:file-music
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Tracks
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+                    - type: custom:mushroom-template-card
+                      primary: Stations
+                      secondary: ' '
+                      icon: mdi:radio
+                      multiline_secondary: false
+                      fill_container: false
+                      tap_action:
+                        action: call-service
+                        service: input_select.select_option
+                        target:
+                          entity_id: input_select.rx_stereo_menu_list
+                        data:
+                          option: Stations
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --card-primary-font-size: 28px;
+                            --card-primary-line-height: 30px;
+                            --card-primary-color: #ffffffb8;
+                            background: none !important;
+                            box-shadow: none !important;
+                            padding: 12px 12px 12px 12px !important;
+                          }
+                          mushroom-shape-icon {
+                            --shape-color: transparent !important;
+                            --shape-color-disabled: transparent !important;
+                            padding: 0px 0px 0px 0px !important;
+                          }
+                          :host {
+                            --mush-icon-symbol-size: 0.75em;
+                          }
+            style:
+              align: left
+              top: 205px
+              left: 150px
+              height: 400px
+              width: 280px
+            card_mod:
+              style: |
+                ha-card {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  scale: 0 !important;
+                {% else %}
+                  scale: 1 !important;
+                {% endif %}
+                }
+          - type: custom:mushroom-template-card
+            primary: ''
+            secondary: '{{ state_attr(''media_player.squeeze_rxstereo'', ''media_title'') }}'
+            icon: ''
+            entity: media_player.squeeze_rxstereo
+            fill_container: true
+            layout: horizontal
+            tap_action:
+              action: none
+            hold_action:
+              action: none
+            double_tap_action:
+              action: none
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                  width: 982px;
+                {% else %}
+                  left: 1310px;
+                  width: 793px;
+                {% endif %}
+                }
+                ha-card {
+                  --card-primary-font-size: 42px;
+                  --card-secondary-font-size: 42px;
+                  --card-primary-line-height: 47px;
+                  --card-secondary-line-height: 47px;
+                  --card-primary-color: #ffffffba;
+                  --card-secondary-color: #ffffffba;
+                  border: none !important;
+                  box-shadow: none;
+                  background: none;
+                  margin: none;
+                  padding: 0px !important;
+                }
+            style:
+              top: 46px
+              height: 47px
+          - type: custom:mushroom-template-card
+            primary: ''
+            secondary: '{{ state_attr(''media_player.squeeze_rxstereo'', ''media_artist'') }}'
+            icon: ''
+            entity: media_player.squeeze_rxstereo
+            fill_container: true
+            layout: horizontal
+            tap_action:
+              action: none
+            hold_action:
+              action: none
+            double_tap_action:
+              action: none
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                  width: 982px;
+                {% else %}
+                  left: 1310px;
+                  width: 793px;
+                {% endif %}
+                }
+                ha-card {
+                  --card-primary-font-size: 34px;
+                  --card-secondary-font-size: 34px;
+                  --card-primary-line-height: 36px;
+                  --card-secondary-line-height: 36px;
+                  --card-primary-color: #ffffffba;
+                  --card-secondary-color: #ffffffba;
+                  border: none !important;
+                  box-shadow: none;
+                  background: none;
+                  margin: none;
+                  padding: 0px !important;
+                }
+            style:
+              top: 106px
+              height: 42px
+          - type: custom:mushroom-template-card
+            primary: ''
+            secondary: >-
+              {{ state_attr('media_player.squeeze_rxstereo', 'media_album_name')
+              }}
+            icon: ''
+            entity: media_player.squeeze_rxstereo
+            fill_container: true
+            layout: horizontal
+            tap_action:
+              action: none
+            hold_action:
+              action: none
+            double_tap_action:
+              action: none
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 1215px;
+                  width: 982px;
+                {% else %}
+                  left: 1310px;
+                  width: 793px;
+                {% endif %}
+                }
+                ha-card {
+                  --card-primary-font-size: 26px;
+                  --card-secondary-font-size: 26px;
+                  --card-primary-line-height: 28px;
+                  --card-secondary-line-height: 28px;
+                  --card-primary-color: #ffffffba;
+                  --card-secondary-color: #ffffffba;
+                  border: none !important;
+                  box-shadow: none;
+                  background: none;
+                  margin: none;
+                  padding: 0px !important;
+                }
+            style:
+              top: 146px
+              height: 42px
+          - type: custom:hui-element
+            card_type: vertical-stack
+            cards:
+              - type: conditional
+                conditions:
+                  - condition: state
+                    entity: input_boolean.rx_stereo_volume
+                    state: 'on'
+                card:
+                  type: custom:my-slider-v2
+                  entity: media_player.squeeze_rxstereo
+                  vertical: true
+                  mode: volume
+                  styles:
+                    card:
+                      - height: 433px
+                      - border-radius: 20px
+                    container:
+                      - border-radius: 20px
+                      - box-shadow: >-
+                          0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0,
+                          0, 0, 0.20)
+                    track: null
+                    progress:
+                      - background: rgb(255 168 125 / 46%)
+                    thumb:
+                      - background: '#ffffffbd'
+                      - height: 4px
+                      - box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%)
+                  card_mod:
+                    style: |
+                      ha-card {
+                        padding: 2px;
+                        margin: 0px 0px 89px 2px;
+                      }
+              - type: custom:mushroom-template-card
+                primary: '{{media_player.squeeze_rxstereo:volume_level}}'
+                secondary: ''
+                icon: mdi:volume-medium
+                badge_icon: ''
+                icon_color: '#ffffffbd'
+                entity: input_boolean.rx_stereo_volume
+                layout: horizontal
+                hold_action:
+                  action: call-service
+                  service: media_player.volume_set
+                  target:
+                    entity_id: media_player.squeeze_rxstereo
+                  data:
+                    volume_level: 0
+                double_tap_action:
+                  action: call-service
+                  service: media_player.volume_set
+                  target:
+                    entity_id: media_player.squeeze_rxstereo
+                  data:
+                    volume_level: 0
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    :host {
+                    {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                      --mush-icon-symbol-size: 0.0em;
+                    {% else %}
+                      --mush-icon-symbol-size: 1.0em;
+                    {% endif %}
+                    }
+                    ha-card {
+                      --chip-background: none !important;
+                      width: fit-content;
+                      background: none;
+                      padding: 0px 0px 0px 0px !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    mushroom-badge-icon {
+                      --main-color: none !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                    }
+            style:
+              bottom: '-225px'
+              left: 1694px
+              height: 562px
+              width: 40px
+              display: flex
+              align-content: flex-end
+              flex-wrap: wrap
+          - type: custom:mushroom-template-card
+            primary: '{{media_player.squeeze_rxstereo:volume_level}}'
+            secondary: ''
+            icon: mdi:power
+            badge_icon: ''
+            icon_color: '#ffffffbd'
+            entity: media_player.squeeze_rxstereo
+            layout: horizontal
+            hold_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            double_tap_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            tap_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  --mush-icon-symbol-size: 0.0em;
+                {% else %}
+                  --mush-icon-symbol-size: 1.0em;
+                {% endif %}
+                }
+                :host {
+                {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                  left: 741px;
+                {% else %}
+                  left: 930px;
+                {% endif %}
+                }
+                ha-card {
+                  --chip-background: none !important;
+                  width: fit-content;
+                  background: none;
+                  padding: 0px 0px 0px 0px !important;
+                  border: none !important;
+                  box-shadow: none !important;
+                }
+                mushroom-badge-icon {
+                  --main-color: none !important;
+                }
+                mushroom-shape-icon {
+                  --shape-color: transparent !important;
+                  --shape-color-disabled: transparent !important;
+                }
+            style:
+              bottom: 34px
+              height: 40px
+              width: 40px
+          - type: custom:state-switch
+            entity: input_select.rx_stereo_menu_list
+            transition: flip-x
+            states:
+              CoverArt:
+                type: custom:hui-element
+                card_type: custom:mini-media-player
+                entity: media_player.squeeze_rxstereo
+                artwork: full-cover
+                scale: '1'
+                hide:
+                  name: true
+                  icon: true
+                  info: true
+                  power: true
+                  source: true
+                  sound_mode: true
+                  group_button: true
+                  controls: true
+                  prev: true
+                  next: true
+                  play_pause: true
+                  play_stop: true
+                  jump: true
+                  volume: true
+                  volume_level: true
+                  mute: true
+                  progress: true
+                  runtime: true
+                  runtime_remaining: true
+                  artwork_boarder: true
+                  power_state: true
+                  icon_state: true
+                  shuffle: true
+                  repeat: true
+                  state_lable: true
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                    }
+                    ha-card>div.mmp__bg {
+                      border-radius: 20px;
+                    }
+                    ha-card>div.mmp-player {
+                      background: none !important;
+                    {
+              Search:
+                type: iframe
+                url: http://192.168.86.6:8095/#/search
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Playlists:
+                type: iframe
+                url: http://192.168.86.6:8095/#/playlists
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Albums:
+                type: iframe
+                url: http://192.168.86.6:8095/#/albums
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Artists:
+                type: iframe
+                url: http://192.168.86.6:8095/#/artists
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Tracks:
+                type: iframe
+                url: http://192.168.86.6:8095/#/tracks
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Stations:
+                type: iframe
+                url: http://192.168.86.6:8095/#/radios
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+            style:
+              top: 321px
+              height: 582px
+              width: 582px
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  0% { left: 393px; }
+                  25% { left: 440px; }
+                  50% { left: 487px; }
+                  75% { left: 534px; }
+                  100% { left: 582px; }
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                    animation: slideright 5s ease reverse forwards !important;
+                  {% else %}
+                    animation: slideright 5s ease normal forwards !important;
+                  {% endif %}
+                }
+                :host {
+                  scrollbar-width: none;
+                  border-radius: 20px;
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.20) !important;
+                }
+          - type: image
+            entity: media_player.squeeze_rxstereo
+            state_image:
+              'off': /local/mass-power.png
+            tap_action:
+              action: toggle
+            filter: grayscale(0%)
+            style:
+              top: 150px
+              left: 229px
+              height: 377px
+              width: 377px
+              animation: boing 2s linear infinite
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  scale: 1;
+                {% else %}
+                  scale: 0;
+                {% endif %}
+                }
+        image: /local/mass-background2.png
+        view_layout:
+          column: 1
+        card_mod:
+          style: |
+
+            @keyframes boing {
+              0% { transform: scale3d(1, 1, 1); }
+              25% { transform: scale3d(1.02, 1.02, 1.02); }
+              50% { transform: scale3d(1.04, 1.04, 1.04); }
+              75% { transform: scale3d(1.02, 1.02, 1.02); }
+              100% { transform: scale3d(1, 1, 1); }
+            }
+        card-mod:
+          style: |
+            ha-card {
+              margin: 0px 0px 0px 0px !important;
+              box-shadow: none !important;
+            }
+      - type: picture-elements
+        elements:
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: full-cover-fit
+            scale: '1'
+            tap_action: false
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              top: '-150px'
+              left: 873px
+              height: 695px
+              width: 1786px
+            card_mod:
+              style:
+                ha-card: |
+                  div.mmp__bg {
+                    filter: blur(10px) grayscale(50%) brightness(0.6);
+                  }    
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '2'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: true
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: false
+              runtime: false
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: 122px
+              height: 40px
+              '--mmp-text-color': '#ffffffba'
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: 1215px;}
+                  to {left: 1310px;}
+                }
+                @keyframes slideleft {
+                  from {left: 1310px;}
+                  to {left: 1215px;}
+                }
+                @keyframes widthadd {
+                  from {width: 793px;}
+                  to {width: 982px;}
+                }
+                @keyframes widthminus {
+                  from {width: 982px;}
+                  to {width: 793px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                    animation: slideleft 0.5s ease normal forwards, widthadd 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideright 0.5s ease normal forwards, widthminus 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '3'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: false
+              next: false
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: '-76px'
+              height: 152px
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: 1215px;}
+                  to {left: 1310px;}
+                }
+                @keyframes slideleft {
+                  from {left: 1310px;}
+                  to {left: 1215px;}
+                }
+                @keyframes widthadd {
+                  from {width: 390px;}
+                  to {width: 490px;}
+                }
+                @keyframes widthminus {
+                  from {width: 490px;}
+                  to {width: 390px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "on") %}
+                    animation: slideright 0.5s ease normal forwards, widthminus 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideleft 0.5s ease normal forwards, widthadd 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '5'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: false
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: true
+              state_lable: true
+            style:
+              bottom: '-124px'
+              height: 200px
+              width: 200px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: 1215px;}
+                  to {left: 1310px;}
+                }
+                @keyframes slideleft {
+                  from {left: 1310px;}
+                  to {left: 1215px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "on") %}
+                    animation: slideright 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideleft 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                .entity__icon {
+                  --mdc-icon-size: 80px !important;
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '1.6'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: true
+              repeat: false
+              state_lable: true
+            style:
+              bottom: 36px
+              height: 40px
+              width: 40px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: 911px;}
+                  to {left: 1111px;}
+                }
+                @keyframes slideleft {
+                  from {left: 1111px;}
+                  to {left: 911px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "on") %}
+                    animation: slideright 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideleft 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:mini-media-player
+            entity: media_player.squeeze_rxstereo
+            artwork: none
+            background: none
+            scale: '1.6'
+            mini-media-player-background-opacity: '0'
+            mini-media-player-overlay-color: rgba(0,0,0,0)
+            mini-media-player-overlay-color-stop: 100%
+            mini-media-player-progress-height: 10px
+            hide:
+              name: true
+              icon: true
+              info: true
+              power: true
+              source: true
+              sound_mode: true
+              group_button: true
+              controls: false
+              prev: true
+              next: true
+              play_pause: true
+              play_stop: true
+              jump: true
+              volume: true
+              volume_level: true
+              mute: true
+              progress: true
+              runtime: true
+              runtime_remaining: true
+              artwork_boarder: true
+              power_state: true
+              icon_state: true
+              shuffle: false
+              repeat: true
+              state_lable: true
+            style:
+              bottom: 36px
+              left: 1510px
+              height: 40px
+              width: 40px
+              display: flex
+              justify-content: center
+              align-items: center
+            card_mod:
+              style: |
+                ha-card>div.mmp__bg {
+                  background: none;
+                }
+          - type: custom:layout-card
+            layout_type: grid
+            layout:
+              grid-template-columns: 240px 630px auto
+              grid-template-rows: 630px
+              grid-template-areas: |
+                "menu card text"
+            cards:
+              - type: vertical-stack
+                view_layout:
+                  grid-area: menu
+                cards:
+                  - type: custom:mushroom-template-card
+                    primary: Search
+                    secondary: ' '
+                    icon: mdi:magnify
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Search
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 51px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                  - type: custom:mushroom-template-card
+                    primary: Playlists
+                    secondary: ' '
+                    icon: mdi:playlist-music-outline
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Playlists
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 12px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                  - type: custom:mushroom-template-card
+                    primary: Albums
+                    secondary: ' '
+                    icon: mdi:album
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Albums
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 12px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                  - type: custom:mushroom-template-card
+                    primary: Artists
+                    secondary: ' '
+                    icon: mdi:account-music
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Artists
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 12px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                  - type: custom:mushroom-template-card
+                    primary: Tracks
+                    secondary: ' '
+                    icon: mdi:file-music
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Tracks
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 12px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                  - type: custom:mushroom-template-card
+                    primary: Stations
+                    secondary: ' '
+                    icon: mdi:radio
+                    multiline_secondary: false
+                    fill_container: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      target:
+                        entity_id: input_select.rx_stereo_menu_list
+                      data:
+                        option: Stations
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 28px;
+                          --card-primary-line-height: 30px;
+                          --card-primary-color: #ffffffb8;
+                          background: none !important;
+                          box-shadow: none !important;
+                          padding: 12px 12px 0px 12px !important;
+                        }
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.75em;
+                        }
+                card_mod:
+                  style: |
+                    :host {
+                      box-shadow: none !important;
+                    }
+              - type: custom:state-switch
+                view_layout:
+                  grid-area: card
+                  align-items: center
+                entity: input_select.rx_stereo_menu_list
+                transition: flip-x
+                states:
+                  CoverArt:
+                    type: custom:hui-element
+                    card_type: custom:mini-media-player
+                    entity: media_player.squeeze_rxstereo
+                    artwork: full-cover
+                    scale: '1'
+                    hide:
+                      name: true
+                      icon: true
+                      info: true
+                      power: true
+                      source: true
+                      sound_mode: true
+                      group_button: true
+                      controls: true
+                      prev: true
+                      next: true
+                      play_pause: true
+                      play_stop: true
+                      jump: true
+                      volume: true
+                      volume_level: true
+                      mute: true
+                      progress: true
+                      runtime: true
+                      runtime_remaining: true
+                      artwork_boarder: true
+                      power_state: true
+                      icon_state: true
+                      shuffle: true
+                      repeat: true
+                      state_lable: true
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          padding: 0px !important;
+                          max-width: 614px;
+                          min-height: 614px;
+                        }
+                        ha-card>div.mmp__bg {
+                          border-radius: 20px;
+                          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 8px 0 rgba(0, 0, 0, 0.20) !important;
+                          margin-top: 0px;
+                          margin-left: 10px;
+                          margin-bottom: 0px;
+                        }
+                        ha-card>div.mmp-player {
+                          background: none !important;
+                        {
+                  Search:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/search
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 614px !important;
+                          min-height: 614px !important;
+                        }
+                  Playlists:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/playlists
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 582px !important;
+                          min-height: 582px !important;
+                        }
+                  Albums:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/albums
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 582px !important;
+                          min-height: 582px !important;
+                        }
+                  Artists:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/artists
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 582px !important;
+                          min-height: 582px !important;
+                        }
+                  Tracks:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/tracks
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 582px !important;
+                          min-height: 582px !important;
+                        }
+                  Stations:
+                    type: iframe
+                    url: http://192.168.86.6:8095/#/radios
+                    aspect_ratio: 0%
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          border-radius: 20px;
+                          scrollbar-width: none;
+                          opacity: 97%;
+                          overflow: scroll !important;
+                          max-height: 582px !important;
+                          min-height: 582px !important;
+                        }
+              - type: custom:layout-card
+                view_layout:
+                  grid-area: text
+                layout_type: custom:grid-layout
+                layout:
+                  justify-content: start
+                  align-content: start
+                  padding: 0px
+                  max_cols: 1
+                  grid-template-columns: 100%
+                  grid-template-rows: 50px 55px 45px 32px
+                  grid-template-areas: |
+                    "title"
+                    "artist"
+                    "album"
+                    "provider"
+                cards:
+                  - type: custom:mushroom-template-card
+                    view_layout:
+                      grid-area: title
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_title') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 42px;
+                          --card-secondary-font-size: 42px;
+                          --card-primary-line-height: 47px;
+                          --card-secondary-line-height: 47px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px 0px 0px 20px !important;
+                        }
+                  - type: custom:mushroom-template-card
+                    view_layout:
+                      grid-area: artist
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_artist') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 34px;
+                          --card-secondary-font-size: 34px;
+                          --card-primary-line-height: 36px;
+                          --card-secondary-line-height: 36px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px 0px 0px 20px !important;
+                        }
+                  - type: custom:mushroom-template-card
+                    view_layout:
+                      grid-area: album
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_album_name') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        ha-card {
+                          --card-primary-font-size: 26px;
+                          --card-secondary-font-size: 26px;
+                          --card-primary-line-height: 30px;
+                          --card-secondary-line-height: 30px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px 0px 0px 20px !important;
+                        }
+                  - type: custom:mushroom-template-card
+                    view_layout:
+                      grid-area: provider
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_content_id').split(':')[0]|title }}
+                    icon: fapro:qobuz
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        mushroom-shape-icon {
+                          --shape-color: transparent !important;
+                          --shape-color-disabled: transparent !important;
+                          padding: 0px 0px 0px 0px !important;
+                        }
+                        :host {
+                          --mush-icon-symbol-size: 0.60em;
+                        }
+                        ha-card {
+                          --card-primary-font-size: 22px;
+                          --card-secondary-font-size: 22px;
+                          --card-primary-line-height: 24px;
+                          --card-secondary-line-height: 24px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px 0px 0px 13px !important;
+                        }
+            style:
+              align: left
+              top: 313px
+              left: '-47px'
+              height: 582px
+              width: 280px
+              animation: slideleft 0.5s ease normal forwards;
+              animation-play-state: running;
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: -27px;}
+                  to {left: 133px;}
+                }
+                @keyframes slideleft {
+                  from {left: 133px;}
+                  to {left: -27px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "on") %}
+                    animation: slideright 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideleft 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                :host {
+                  scrollbar-width: none;
+                  border-radius: 20px;
+                  padding: 0px 0px 0px 20px;
+                  #box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.20) !important;
+                  {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  scale: 0;
+                  {% else %}
+                  scale: 1;
+                  {% endif %}
+                }
+          - type: custom:hui-element
+            card_type: vertical-stack
+            cards:
+              - type: custom:mushroom-entity-card
+                entity: input_boolean.rx_stereo_menu
+                icon: mdi:menu
+                primary_info: none
+                secondary_info: none
+                icon_type: icon
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    :host {
+                    {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                      --mush-icon-symbol-size: 0.0em;
+                    {% else %}
+                      --mush-icon-symbol-size: 1.0em;
+                    {% endif %}
+                    }
+                    ha-card {
+                      --chip-background: none !important;
+                      width: fit-content;
+                      background: none;
+                      padding: 15px 0px 0px 15px !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    mushroom-badge-icon {
+                      --main-color: none !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                    }
+            style:
+              align: left
+              top: 40px
+              left: 40px
+              height: 64px
+              width: 64px
+            card_mod:
+              style: |
+                ha-card {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  scale: 0 !important;
+                {% else %}
+                  scale: 1 !important;
+                {% endif %}
+                }
+          - type: custom:hui-element
+            card_type: vertical-stack
+            cards:
+              - type: conditional
+                conditions:
+                  - condition: state
+                    entity: input_boolean.rx_stereo_volume
+                    state: 'on'
+                card:
+                  type: custom:my-slider-v2
+                  entity: media_player.squeeze_rxstereo
+                  vertical: true
+                  mode: volume
+                  styles:
+                    card:
+                      - height: 433px
+                      - border-radius: 20px
+                    container:
+                      - border-radius: 20px
+                      - box-shadow: >-
+                          0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0,
+                          0, 0, 0.20)
+                    track: null
+                    progress:
+                      - background: rgb(255 168 125 / 46%)
+                    thumb:
+                      - background: '#ffffffbd'
+                      - height: 4px
+                      - box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%)
+                  card_mod:
+                    style: |
+                      ha-card {
+                        padding: 2px;
+                        margin: 0px 0px 89px 2px;
+                      }
+              - type: custom:mushroom-template-card
+                primary: '{{media_player.squeeze_rxstereo:volume_level}}'
+                secondary: ''
+                icon: mdi:volume-medium
+                badge_icon: ''
+                icon_color: '#ffffffbd'
+                entity: input_boolean.rx_stereo_volume
+                layout: horizontal
+                hold_action:
+                  action: call-service
+                  service: media_player.volume_set
+                  target:
+                    entity_id: media_player.squeeze_rxstereo
+                  data:
+                    volume_level: 0
+                double_tap_action:
+                  action: call-service
+                  service: media_player.volume_set
+                  target:
+                    entity_id: media_player.squeeze_rxstereo
+                  data:
+                    volume_level: 0
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    :host {
+                    {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                      --mush-icon-symbol-size: 0.0em;
+                    {% else %}
+                      --mush-icon-symbol-size: 1.0em;
+                    {% endif %}
+                    }
+                    ha-card {
+                      --chip-background: none !important;
+                      width: fit-content;
+                      background: none;
+                      padding: 0px 0px 0px 0px !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    mushroom-badge-icon {
+                      --main-color: none !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                    }
+            style:
+              bottom: '-225px'
+              left: 1694px
+              height: 562px
+              width: 40px
+              display: flex
+              align-content: flex-end
+              flex-wrap: wrap
+          - type: custom:mushroom-template-card
+            primary: '{{media_player.squeeze_rxstereo:volume_level}}'
+            secondary: ''
+            icon: mdi:power
+            badge_icon: ''
+            icon_color: '#ffffffbd'
+            entity: media_player.squeeze_rxstereo
+            layout: horizontal
+            hold_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            double_tap_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            tap_action:
+              action: call-service
+              service: media_player.turn_off
+              target:
+                entity_id: media_player.squeeze_rxstereo
+              data: {}
+            card_mod:
+              style: |
+                @keyframes slideright {
+                  from {left: 741px;}
+                  to {left: 930px;}
+                }
+                @keyframes slideleft {
+                  from {left: 930px;}
+                  to {left: 741px;}
+                }
+                :host {
+                  {% if is_state("input_boolean.rx_stereo_menu", "on") %}
+                    animation: slideright 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% else %}
+                    animation: slideleft 0.5s ease normal forwards !important;
+                    animation-play-state: running !important;
+                  {% endif %}
+                }
+                :host {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  --mush-icon-symbol-size: 0.0em;
+                {% else %}
+                  --mush-icon-symbol-size: 1.0em;
+                {% endif %}
+                }
+                ha-card {
+                  --chip-background: none !important;
+                  width: fit-content;
+                  background: none;
+                  padding: 0px 0px 0px 0px !important;
+                  border: none !important;
+                  box-shadow: none !important;
+                }
+                mushroom-badge-icon {
+                  --main-color: none !important;
+                }
+                mushroom-shape-icon {
+                  --shape-color: transparent !important;
+                  --shape-color-disabled: transparent !important;
+                }
+            style:
+              bottom: 34px
+              height: 40px
+              width: 40px
+          - type: image
+            entity: media_player.squeeze_rxstereo
+            state_image:
+              'off': /local/mass-power.png
+            tap_action:
+              action: toggle
+            filter: grayscale(0%)
+            style:
+              top: 150px
+              left: 229px
+              height: 377px
+              width: 377px
+              animation: boing 2s linear infinite
+            card_mod:
+              style: |
+                :host {
+                {% if is_state("media_player.squeeze_rxstereo", "off") %}
+                  scale: 1;
+                {% else %}
+                  scale: 0;
+                {% endif %}
+                }
+        image: /local/mass-background2.png
+        view_layout:
+          column: 1
+        card_mod:
+          style: |
+
+            @keyframes boing {
+              0% { transform: scale3d(1, 1, 1); }
+              25% { transform: scale3d(1.02, 1.02, 1.02); }
+              50% { transform: scale3d(1.04, 1.04, 1.04); }
+              75% { transform: scale3d(1.02, 1.02, 1.02); }
+              100% { transform: scale3d(1, 1, 1); }
+            }
+            ha-card {
+              margin: 0px 0px 0px 0px !important;
+              box-shadow: none !important;
+            }
+      - type: custom:layout-card
+        layout_type: custom:grid-layout
+        cards:
+          - type: vertical-stack
+            cards:
+              - type: custom:mushroom-template-card
+                primary: Search
+                secondary: ' '
+                icon: mdi:magnify
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: perform-action
+                  perform_action: input_select.select_option
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+              - type: custom:mushroom-template-card
+                primary: Playlists
+                secondary: ' '
+                icon: mdi:playlist-music-outline
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: call-service
+                  service: input_select.select_option
+                  target:
+                    entity_id: input_select.rx_stereo_menu_list
+                  data:
+                    option: Playlists
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+              - type: custom:mushroom-template-card
+                primary: Albums
+                secondary: ' '
+                icon: mdi:album
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: call-service
+                  service: input_select.select_option
+                  target:
+                    entity_id: input_select.rx_stereo_menu_list
+                  data:
+                    option: Albums
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+              - type: custom:mushroom-template-card
+                primary: Artists
+                secondary: ' '
+                icon: mdi:account-music
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: call-service
+                  service: input_select.select_option
+                  target:
+                    entity_id: input_select.rx_stereo_menu_list
+                  data:
+                    option: Artists
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+              - type: custom:mushroom-template-card
+                primary: Tracks
+                secondary: ' '
+                icon: mdi:file-music
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: call-service
+                  service: input_select.select_option
+                  target:
+                    entity_id: input_select.rx_stereo_menu_list
+                  data:
+                    option: Tracks
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+              - type: custom:mushroom-template-card
+                primary: Stations
+                secondary: ' '
+                icon: mdi:radio
+                multiline_secondary: false
+                fill_container: false
+                tap_action:
+                  action: call-service
+                  service: input_select.select_option
+                  target:
+                    entity_id: input_select.rx_stereo_menu_list
+                  data:
+                    option: Stations
+                card_mod:
+                  style: |
+                    ha-card {
+                      --card-primary-font-size: 28px;
+                      --card-primary-line-height: 30px;
+                      --card-primary-color: #ffffffb8;
+                      background: none !important;
+                      box-shadow: none !important;
+                      padding: 12px 12px 12px 12px !important;
+                    }
+                    mushroom-shape-icon {
+                      --shape-color: transparent !important;
+                      --shape-color-disabled: transparent !important;
+                      padding: 0px 0px 0px 0px !important;
+                    }
+                    :host {
+                      --mush-icon-symbol-size: 0.75em;
+                    }
+          - type: custom:state-switch
+            entity: input_select.rx_stereo_menu_list
+            view_layout:
+              grid-area: card
+              justify-self: center
+              width: 582px
+            transition: flip-x
+            states:
+              CoverArt:
+                type: custom:hui-element
+                card_type: custom:mini-media-player
+                entity: media_player.squeeze_rxstereo
+                artwork: full-cover
+                scale: '1'
+                hide:
+                  name: true
+                  icon: true
+                  info: true
+                  power: true
+                  source: true
+                  sound_mode: true
+                  group_button: true
+                  controls: true
+                  prev: true
+                  next: true
+                  play_pause: true
+                  play_stop: true
+                  jump: true
+                  volume: true
+                  volume_level: true
+                  mute: true
+                  progress: true
+                  runtime: true
+                  runtime_remaining: true
+                  artwork_boarder: true
+                  power_state: true
+                  icon_state: true
+                  shuffle: true
+                  repeat: true
+                  state_lable: true
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      height: 582px;
+                      width: 582px;
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.99), 0 6px 20px 0 rgba(0, 0, 0, 0.99) !important;
+                    }
+                    ha-card>div.mmp__bg {
+                      border-radius: 20px;
+                      height: 582px;
+                      width: 582px:
+                    }
+                    ha-card>div.mmp-player {
+                      background: none !important;
+                    {
+              Search:
+                type: iframe
+                url: http://192.168.86.6:8095/#/search
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Playlists:
+                type: iframe
+                url: http://192.168.86.6:8095/#/playlists
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Albums:
+                type: iframe
+                url: http://192.168.86.6:8095/#/albums
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Artists:
+                type: iframe
+                url: http://192.168.86.6:8095/#/artists
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Tracks:
+                type: iframe
+                url: http://192.168.86.6:8095/#/tracks
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+              Stations:
+                type: iframe
+                url: http://192.168.86.6:8095/#/radios
+                aspect_ratio: 0%
+                card_mod:
+                  style: |
+                    ha-card { 
+                      border-radius: 20px;
+                      scrollbar-width: none;
+                      opacity: 97%;
+                      overflow: scroll !important;
+                      max-height: 582px !important;
+                      min-height: 582px !important;
+                    }
+          - type: custom:layout-card
+            layout_type: custom:grid-layout
+            layout:
+              justify-content: start
+              padding: 0px
+              grid-template-columns: 864px
+              grid-template-rows: 185px 185px 185px 100px
+              grid-template-areas: |
+                "info controls"
+            cards:
+              - type: vertical-stack
+                cards:
+                  - type: custom:mushroom-template-card
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_title') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        :host {
+                        {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                          left: 1215px;
+                          width: 982px;
+                        {% else %}
+                          left: 1310px;
+                          width: 793px;
+                        {% endif %}
+                        }
+                        ha-card {
+                          --card-primary-font-size: 42px;
+                          --card-secondary-font-size: 42px;
+                          --card-primary-line-height: 47px;
+                          --card-secondary-line-height: 47px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px 0px 15px 0px !important;
+                        }
+                    style:
+                      top: 46px
+                      height: 47px
+                  - type: custom:mushroom-template-card
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_artist') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        :host {
+                        {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                          left: 1215px;
+                          width: 982px;
+                        {% else %}
+                          left: 1310px;
+                          width: 793px;
+                        {% endif %}
+                        }
+                        ha-card {
+                          --card-primary-font-size: 34px;
+                          --card-secondary-font-size: 34px;
+                          --card-primary-line-height: 36px;
+                          --card-secondary-line-height: 36px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px !important;
+                        }
+                    style:
+                      top: 106px
+                      height: 42px
+                  - type: custom:mushroom-template-card
+                    primary: ''
+                    secondary: >-
+                      {{ state_attr('media_player.squeeze_rxstereo',
+                      'media_album_name') }}
+                    icon: ''
+                    entity: media_player.squeeze_rxstereo
+                    fill_container: true
+                    layout: horizontal
+                    tap_action:
+                      action: none
+                    hold_action:
+                      action: none
+                    double_tap_action:
+                      action: none
+                    card_mod:
+                      style: |
+                        :host {
+                        {% if is_state("input_boolean.rx_stereo_menu", "off") %}
+                          left: 1215px;
+                          width: 982px;
+                        {% else %}
+                          left: 1310px;
+                          width: 793px;
+                        {% endif %}
+                        }
+                        ha-card {
+                          --card-primary-font-size: 26px;
+                          --card-secondary-font-size: 26px;
+                          --card-primary-line-height: 28px;
+                          --card-secondary-line-height: 28px;
+                          --card-primary-color: #ffffffba;
+                          --card-secondary-color: #ffffffba;
+                          border: none !important;
+                          box-shadow: none;
+                          background: none;
+                          margin: none;
+                          padding: 0px !important;
+                        }
+                    style:
+                      top: 146px
+                      height: 42px
+                  - type: custom:layout-card
+                    layout_type: custom:grid-layout
+                    layout: {}
+                    cards:
+                      - type: custom:mushroom-template-card
+                        primary: Hello, {{user}}
+                        secondary: How are you?
+                        icon: fapro:qobuz
+                        icon_color: '#ffffff90'
+        layout:
+          justify-content: center
+          padding: 20px
+          grid-template-columns: 280px 602px 864px
+          grid-template-rows: 655px
+          grid-template-areas: |
+            "menu card player"
+    type: custom:horizontal-layout
+    layout:
+      card_margin: 0px
+      margin: 0px 0px 0px 0px
+      max-height: 655
+      padding: 0px 0px 0px 0px
+      width: 1746
+      scale: 1
+      max-width: 1746
