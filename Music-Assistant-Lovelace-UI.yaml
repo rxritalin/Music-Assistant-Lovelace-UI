@@ -1,7 +1,7 @@
 kiosk_mode:
   entity_settings:
     - entity:
-        input_boolean.mbr_hide_header: 'on'
+        input_boolean.hide_header: 'on'
       hide_header: true
 views:
   - title: LR Stereo
