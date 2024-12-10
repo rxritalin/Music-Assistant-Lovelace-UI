@@ -5,7 +5,6 @@ kiosk_mode:
       hide_header: true
 views:
   - title: LR Stereo
-    path: lr-stereo
     theme: Mushroom Music
     cards:
       - type: picture-elements
