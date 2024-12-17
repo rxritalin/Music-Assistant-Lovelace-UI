@@ -35,6 +35,7 @@ This controls the side menu from being shown or hidden.
 4. This UI was built to work with a single player in my house. I wanted to get around to making this player a variable selection, but did not have the time to do so.
 As it stands you would need to create a new dashboard or dashboard view for each player you want an interface for. 
 Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use.
+**I will be changing this in the future, but for right now its a limitation of the code as written. Feel free to comment with a suggested change, and I will consider it when I clean this all up.
 
 Next, you need to create a new automation in your HA instance, switch the view for the automation into YAML mode, and paste the contents of Automation-Mass_Menu.yaml into the new automation.
 This automation triggers the menu to reset "input_select.rx_stereo_menu_list"  back to "coverart" when the hamburger menu is tapped to close the left hand menu. 
