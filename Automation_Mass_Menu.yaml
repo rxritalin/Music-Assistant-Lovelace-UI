@@ -1,0 +1,31 @@
+alias: "Reset MASS UI Menu List "
+description: "Set input_select.rx_stereo_menu_list to \"Search\" when the UI menu is closed. "
+mode: single
+triggers:
+  - entity_id:
+      - input_boolean.rx_stereo_menu
+    trigger: state
+conditions: []
+actions:
+  - if:
+      - condition: state
+        entity_id: input_boolean.rx_stereo_menu
+        state: "on"
+    then:
+      - metadata: {}
+        data:
+          option: Search
+        target:
+          entity_id: input_select.rx_stereo_menu_list
+        action: input_select.select_option
+  - if:
+      - condition: state
+        entity_id: input_boolean.rx_stereo_menu
+        state: "off"
+    then:
+      - metadata: {}
+        data:
+          option: CoverArt
+        target:
+          entity_id: input_select.rx_stereo_menu_list
+        action: input_select.select_option
