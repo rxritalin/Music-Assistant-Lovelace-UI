@@ -34,7 +34,13 @@ This controls the side menu from being shown or hidden.
   -   Coverart
 4. This UI was built to work with a single player in my house. I wanted to get around to making this player a variable selection, but did not have the time to do so.
 As it stands you would need to create a new dashboard or dashboard view for each player you want an interface for. 
-Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use. 
+Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use.
+
+Next, you need to create a new automation in your HA instance, switch the view for the automation into YAML mode, and paste the contents of Automation-Mass_Menu.yaml into the new automation.
+This automation triggers the menu to reset "input_select.rx_stereo_menu_list"  back to "coverart" when the hamburger menu is tapped to close the left hand menu. 
+You can name this automation anything you like, it should not negatively effect the automation. 
+However, if you have changed the names of the helper entities when setting up this dashboard, you will need to change them accordingly in the automation yaml as well. 
+**I will be removing the need for this automation in the future, but for now its needed for the animations to work correctly. 
 
 You also need a few images and the theme file. 
 The images, attached here need to go in the root of your "www" folder in your config folder. If you put them into a sub-folder under www make sure you edit the code above accordingly. In the code above the path is listed as "/local/mass-power.png" and "/local/mass-background2.png", and there are two entries for each. You would need to edit these paths to "/local/sub-folder-name/mass-background2.png" and "/local/sub-folder-name/mass-power.png" accordingly for each if you put them in a subfolder. 
