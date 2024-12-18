@@ -1,0 +1,20 @@
+alias: Hide Rx Stereo UI Menu When Off
+description: "Hide the menu in the Rx Stereo UI when the Player is turned off. "
+mode: single
+triggers:
+  - device_id: f9350a01f600932bd7f8f40e95220c36
+    domain: media_player
+    entity_id: 40068f377f5381daf9435ed504a4d184
+    type: turned_off
+    trigger: device
+conditions: []
+actions:
+  - metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.rx_stereo_menu
+    action: input_boolean.turn_off
+  - target:
+      entity_id: input_boolean.rx_stereo_volume
+    data: {}
+    action: input_boolean.turn_off
