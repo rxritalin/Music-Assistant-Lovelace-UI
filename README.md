@@ -37,11 +37,13 @@ As it stands you would need to create a new dashboard or dashboard view for each
 Search through the yaml code for "entity: media_player.squeeze_rxstereo" and replace it with the name of the player you want to use.
 **I will be changing this in the future, but for right now its a limitation of the code as written. Feel free to comment with a suggested change, and I will consider it when I clean this all up.
 
-Next, you need to create a new automation in your HA instance, switch the view for the automation into YAML mode, and paste the contents of Automation-Mass_Menu.yaml into the new automation.
-This automation triggers the menu to reset "input_select.rx_stereo_menu_list"  back to "coverart" when the hamburger menu is tapped to close the left hand menu. 
+Next, you need to create two new automations in your HA instance, switch the view for the automation into YAML mode, and paste the contents of Automation-Mass_Menu.yaml into the first new automation and the contects of Automation-Hide_Menus.yaml into the second automation. 
+This first automation triggers the menu to reset "input_select.rx_stereo_menu_list"  back to "coverart" when the hamburger menu is tapped to close the left hand menu. 
 You can name this automation anything you like, it should not negatively effect the automation. 
 However, if you have changed the names of the helper entities when setting up this dashboard, you will need to change them accordingly in the automation yaml as well. 
-**I will be removing the need for this automation in the future, but for now its needed for the animations to work correctly. 
+The second automation, makes sure the sidemenu/coverart and the volume slider get hidden when you click the power button. 
+In the Automation-Hide_Menus.yaml make sure that after you paste the yaml code in you flip back from Yaml mode to UI mode and change the media_player to your own. My device id's will obviously not work for you. 
+**I will be working on removing the need for these automations in the future, but for now its needed for the animations to work correctly. 
 
 You also need a few images and the theme file. 
 The images, attached here need to go in the root of your "www" folder in your config folder. If you put them into a sub-folder under www make sure you edit the code above accordingly. In the code above the path is listed as "/local/mass-power.png" and "/local/mass-background2.png", and there are two entries for each. You would need to edit these paths to "/local/sub-folder-name/mass-background2.png" and "/local/sub-folder-name/mass-power.png" accordingly for each if you put them in a subfolder. 
